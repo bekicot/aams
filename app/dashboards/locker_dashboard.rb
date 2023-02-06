@@ -1,6 +1,6 @@
 require "administrate/base_dashboard"
 
-class LockerDashboard < Administrate::BaseDashboard
+class LockerDashboard < ApplicationDashboard
   # ATTRIBUTE_TYPES
   # a hash that describes the type of each of the model's fields.
   #
@@ -66,7 +66,7 @@ class LockerDashboard < Administrate::BaseDashboard
   # Overwrite this method to customize how lockers are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(locker)
-  #   "Locker ##{locker.id}"
-  # end
+  def display_resource(locker)
+    locker.serial_number
+  end
 end

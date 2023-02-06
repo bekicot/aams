@@ -1,6 +1,6 @@
 require "administrate/base_dashboard"
 
-class AccountDashboard < Administrate::BaseDashboard
+class AccountDashboard < ApplicationDashboard
   # ATTRIBUTE_TYPES
   # a hash that describes the type of each of the model's fields.
   #

@@ -1,6 +1,6 @@
 require "administrate/base_dashboard"
 
-class CardTypeDashboard < Administrate::BaseDashboard
+class CardTypeDashboard < ApplicationDashboard
   # ATTRIBUTE_TYPES
   # a hash that describes the type of each of the model's fields.
   #
